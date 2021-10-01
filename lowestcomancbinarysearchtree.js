@@ -1,7 +1,7 @@
 var lowestCommonAncestor = function(root, p, q) {
   const _max = Math.max(p.val, q.val);
         const _min = Math.min(p.val, q.val);
-        while (root != null) { //setting constraints 
+        while (root != null) { 
             if (_min > root.val) {  //invert the nodes in a binary tree, and traverse tree node, where in this case, it will recursively check if the left and right sub-trees are also binary trees themselves. 
 
                 root = root.right; 
